@@ -1,0 +1,7 @@
+﻿Designator,Footprint,Quantity,Value,LCSC Part #
+"D1, D2, D3, D4, D5, D6",DIOAD753W49L380D172B,6,1N4148,
+"D10, D11, D12, D13, D17, D7, D8, D9",LED_SK6812_PLCC4_5.0x5.0mm_P3.2mm,8,SK6812,
+J1,SSD1306-0.91-OLED-4pin-128x32,1,Conn_01x04_Socket,
+"SW1, SW2, SW3, SW4, SW5, SW6",SW_Cherry_MX_1.00u_PCB,6,SW_Push,
+SW7,RotaryEncoder_Alps_EC11E-Switch_Vertical_H20mm_CircularMountingHoles,1,RotaryEncoder_Switch,
+U1,XIAO-RP2040-DIP,1,XIAO-RP2040-DIP,
