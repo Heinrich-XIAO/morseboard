@@ -21,4 +21,4 @@ today, ~~i finished the case~~, started and ~~maybe~~ finished the assembly.
 
 ## Thursday, June 5
 today, i tried to backjournal with the onshape version history for the 3d stuff and kicad backup dates for the pcb related stuff, but given that the kicad backups  are only made on save, the start time will be a bit late.
-    from 6:50 to 7:27
+    from 6:50 to 7:27 and 17:06 to 19:19
