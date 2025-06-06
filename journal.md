@@ -28,3 +28,7 @@ Duration: 3hr 22min
 today, i tried to backjournal with the onshape version history for the 3d stuff and kicad backup dates for the pcb related stuff, but given that the kicad backups  are only made on save, the start time will be a bit late.
     from 6:50 to 7:27 and 17:06 to 19:19
 Duration: 2hr 50mins
+
+## Friday, June 6
+branding is important
+    from 7:57 to 8:21
