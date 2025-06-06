@@ -5,6 +5,19 @@ import usb_hid
 from adafruit_hid.keyboard import Keyboard
 from adafruit_hid.keycode import Keycode
 import adafruit_matrixkeypad
+import supervisor
+
+# rotary encoder (A = GP3, B = GP4)
+encoder_pin_a = digitalio.DigitalInOut(board.GP3)
+encoder_pin_a.direction = digitalio.Direction.INPUT
+encoder_pin_a.pull = digitalio.Pull.UP
+
+encoder_pin_b = digitalio.DigitalInOut(board.GP4)
+encoder_pin_b.direction = digitalio.Direction.INPUT
+encoder_pin_b.pull = digitalio.Pull.UP
+
+last_encoder_state = (encoder_pin_a.value, encoder_pin_b.value)
+
 
 rows = [digitalio.DigitalInOut(board.GP1), digitalio.DigitalInOut(board.GP2)]
 cols = [digitalio.DigitalInOut(board.GP27), digitalio.DigitalInOut(board.GP28), digitalio.DigitalInOut(board.GP29)]
@@ -66,6 +79,7 @@ def decode_and_send():
     else:
         print("Unknown Morse:", code)
 
+# polling is great
 while True:
     now = time.monotonic()
     currently_pressed = set(keypad.pressed_keys)
@@ -96,4 +110,17 @@ while True:
         symbol_sequence = []
 
     pressed_last = currently_pressed
+
+    current_state = (encoder_pin_a.value, encoder_pin_b.value)
+
+    if current_state != last_encoder_state:
+        if last_encoder_state == (1, 1):
+            if current_state == (0, 1):
+                kbd.send(Keycode.VOLUME_INCREMENT)
+                print("Volume up")
+            elif current_state == (1, 0):
+                kbd.send(Keycode.VOLUME_DECREMENT)
+                print("Volume down")
+
+        last_encoder_state = current_state
     time.sleep(0.01)
