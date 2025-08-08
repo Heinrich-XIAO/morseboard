@@ -31,3 +31,5 @@ My hackpad keyboard is a keyboard that types in morse code. The rotary encoder i
 | 1   | Case (3d-printed)       |
 | 5   | PCB                     |
 
+## Finished Build
+![IMG_5001](https://github.com/user-attachments/assets/d4236130-00b8-4351-a42e-ce90ed4b03c6)
