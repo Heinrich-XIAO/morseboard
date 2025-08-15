@@ -32,3 +32,14 @@ Duration: 2hr 50mins
 ## Friday, June 6
 branding is important
     from 7:57 to 8:21
+
+
+# Build: 
+
+Idk when exactly anything happened, so ill combine everything into one.
+
+First, i soldered everything onto the board. THen, I started the rpint for the case. apparently, it was too small. also, when i was first making it, i thought i would add a buffer between the pcb and the case by just scaling it. i was not very bright at the time. and i still am not. but when i was redesigning the case, i imported the pcb and started making an outline. with that, i just extruded a surface and then thicccccened the surface. i also added the hole for the usb c plug.
+
+Finally, I just had to do the firmware. I had to use thonny to program in circuitpy. I learned that the circuitpython library system is lowkey not as bad as i thought when i was first using it. My original code was kinda shit, so i rewrote most of it. all the logic for the morse code. a lot of the morse code table as well. then, i added rgb. every good keyboard has rgb. when not pressed, it is red, then blue for dot and green for dash (i think). I typed on it and got 7 wpm. speeeeeed.
+
+idk how long this took. i estimated it on the form, but i forgot the amount i put in.
